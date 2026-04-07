@@ -1,7 +1,11 @@
 aid: american-national-insurance
-url: https://raw.githubusercontent.com/api-evangelist/american-national-insurance/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/american-national-insurance/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.american-national-insurance.com
+description: >-
+  American National Insurance is a multi-line insurance company offering life insurance,
+  annuities, property and casualty insurance, health insurance, and pension products.
