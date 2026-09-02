@@ -1,0 +1,125 @@
+generated: '2026-09-02'
+method: probed
+source: live GET probes of /.well-known/* on every American National host discovered in this pass
+note: >-
+  Every probed path missed. www.americannational.com returns a genuine Apache 404 for all five
+  well-known documents. api.americannational.com and apigw.americannational.com are IBM
+  DataPower / API Connect gateways that answer EVERY path with an HTTP 500 SOAP fault
+  (X-Backside-Transport: FAIL FAIL) — a catch-all gateway error, not a document.
+  clientsite.americannational.com is a React single-page app whose catch-all returns HTTP 200
+  with the same 2.1KB HTML shell (<title>Sign On</title>) for every /.well-known/* path — the
+  classic SPA false positive, recorded here as a miss, NOT as a served document.
+  No WellKnown or SecurityTxt pointer is emitted from this file: nothing was served.
+hosts:
+  - host: www.americannational.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: api.americannational.com
+    note: IBM DataPower/API Connect gateway; uniform HTTP 500 SOAP fault on every path.
+    documents:
+      - path: /.well-known/security.txt
+        status: 500
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 500
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 500
+        file: null
+      - path: /.well-known/api-catalog
+        status: 500
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 500
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 500
+        file: null
+      - path: /.well-known/agent.json
+        status: 500
+        file: null
+  - host: apigw.americannational.com
+    note: >-
+      Production API Connect gateway backing the customer portal and mobile app
+      (base path /american-national/prod). Uniform HTTP 500 SOAP fault on every
+      well-known path; unmatched routes under the base path return an F5-style
+      JSON 404 ("No resources match requested URI").
+    documents:
+      - path: /.well-known/security.txt
+        status: 500
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 500
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 500
+        file: null
+      - path: /.well-known/api-catalog
+        status: 500
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 500
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 500
+        file: null
+      - path: /.well-known/agent.json
+        status: 500
+        file: null
+  - host: clientsite.americannational.com
+    note: >-
+      React SPA catch-all. Every path returns HTTP 200 with the same HTML shell, so every
+      200 below is a MISS, not a document.
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: null
+        result: html-spa-shell — not a document
+      - path: /.well-known/openid-configuration
+        status: 200
+        file: null
+        result: html-spa-shell — not a document
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        file: null
+        result: html-spa-shell — not a document
+      - path: /.well-known/api-catalog
+        status: 200
+        file: null
+        result: html-spa-shell — not a document
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        file: null
+        result: html-spa-shell — not a document
+      - path: /.well-known/agent-card.json
+        status: 200
+        file: null
+        result: html-spa-shell — not a document
+      - path: /.well-known/agent.json
+        status: 200
+        file: null
+        result: html-spa-shell — not a document
+summary:
+  hosts_probed: 4
+  documents_served: 0
+  agent_card_found: false

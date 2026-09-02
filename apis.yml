@@ -54,6 +54,16 @@ apis: []
 common:
   - type: DomainSecurity
     url: security/american-national-insurance-domain-security.yml
+  - type: LLMsTxt
+    url: llms/american-national-insurance-llms.txt
+  - type: TermsOfService
+    url: https://www.americannational.com/home/legal/terms-and-conditions
+  - type: PrivacyPolicy
+    url: https://www.americannational.com/home/legal/client-site---mobile-app-privacy-policy
+  - type: Support
+    url: https://www.americannational.com/home/contact-us
+  - type: Blog
+    url: https://www.americannational.com/home/newsroom
   - type: LinkedIn
     url: https://www.linkedin.com/company/american-national-insurance
   - type: Website
@@ -89,8 +99,37 @@ common:
       - name: Pension Consultant Platforms
         description: Integration with pension actuaries, consultants, and plan sponsors for group annuity and pension risk transfer transactions.
 created: '2024-11-15'
-modified: '2026-04-19'
+modified: '2026-09-02'
 maintainers:
   - FN: Kin Lane
     email: info@apievangelist.com
 specificationVersion: '0.23'
+x-enrichment:
+  date: '2026-09-02'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    American National ships customer-facing web and mobile apps but no developer program at all —
+    /developers, /developer, /api-docs, /openapi.json, /swagger.json and /llms.txt are all hard 404s
+    on www.americannational.com, its 280-URL sitemap contains no API or integration page, and the two
+    IBM API Connect gateways found in the client-portal JavaScript bundle
+    (api.americannational.com and apigw.americannational.com/american-national/prod) are private
+    back ends that answer every path with an HTTP 500 SOAP fault rather than a published contract.
+  evidence:
+    - url: https://www.americannational.com/developers
+      status: 404
+    - url: https://www.americannational.com/openapi.json
+      status: 404
+    - url: https://www.americannational.com/llms.txt
+      status: 404
+    - url: https://www.americannational.com/.well-known/api-catalog
+      status: 404
+    - url: https://apigw.americannational.com/american-national/prod/openapi.json
+      status: 500
+    - url: https://apigw.americannational.com/american-national/prod/public/
+      status: 404
+  checked: '2026-09-02'
