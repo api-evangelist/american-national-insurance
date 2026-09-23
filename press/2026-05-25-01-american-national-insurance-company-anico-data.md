@@ -1,7 +1,9 @@
 ---
 title: American National Insurance Company (ANICO) Data ...
 url: https://hackread.com/american-national-insurance-company-anico-moveit-breach/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"American National Insurance" press release artificial intelligence'
 position: 1
 source: serpapi-google

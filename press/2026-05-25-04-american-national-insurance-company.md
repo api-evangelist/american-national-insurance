@@ -1,7 +1,9 @@
 ---
 title: American National Insurance Company
 url: https://www.reinsurancene.ws/tag/american-national-insurance-company/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"American National Insurance" press release artificial intelligence'
 position: 4
 source: serpapi-google
