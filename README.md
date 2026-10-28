@@ -1,4 +1,4 @@
-# American National Insurance (american-national-insurance)
+# American National Insurance
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,52 +66,81 @@
 
 American National Insurance Company is a multi-line insurance holding company founded in 1905 and headquartered in Galveston, Texas. The company offers life insurance, annuities, pension risk transfer, health insurance, and property and casualty insurance through multiple subsidiary companies operating in all 50 states. American National holds A-level ratings from A.M. Best, Fitch, and S&P.
 
-**URL:** [https://www.americannational.com](https://www.americannational.com)
+**Areas:** Insurance · Life Insurance · Annuities · Health Insurance · Property and Casualty · Pensions · Financial Services · Fortune 1000
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## American National Insurance on APIs.io
 
-## Tags:
+Everything profiled for American National Insurance is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/american-national-insurance/](https://apis.io/providers/american-national-insurance/)** — or go straight to one of the APIs or properties below.
 
- - Insurance, Life Insurance, Annuities, Health Insurance, Property Casualty, Pension, Financial Services
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2024-11-15
-- **Modified:** 2026-04-19
+#### Security (1)
 
-## Common Properties
+Authentication, trust centre, and vulnerability disclosure.
+
+- [American National Insurance Domain Security](https://apis.io/security/american-national-insurance/american-national-insurance-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.americannational.com)
+- [Support](https://www.americannational.com/home/contact-us)
+- [Blog](https://www.americannational.com/home/newsroom)
+- [Terms of service](https://www.americannational.com/home/legal/terms-and-conditions)
+- [Privacy policy](https://www.americannational.com/home/legal/client-site---mobile-app-privacy-policy)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Life Insurance | Term, whole life, and universal life insurance products through multiple American National subsidiary companies operating across all 50 states. |
-| Annuity Products | Fixed, fixed indexed, and income annuity products providing retirement income solutions, guaranteed interest rates, and tax-deferred growth. |
-| Pension Risk Transfer | Group annuity products allowing defined benefit pension plan sponsors to transfer pension obligations and longevity risk to American National. |
-| Health Insurance | Supplemental health, Medicare supplement, and group health insurance products for individuals and employer groups. |
-| Farm and Ranch Insurance | Farm, ranch, and business property and casualty insurance distributed through the Farm Family brand, covering agricultural and rural properties. |
-| Online Account Portal | Customer self-service portal for policy management, annuity fund access, claims tracking, and tax document retrieval. |
+**Kin Score 10.5** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
 
-| Name | Description |
-|------|-------------|
-| Retirement Income Planning | Using annuity products to create guaranteed lifetime income streams for retirees and near-retirees concerned about outliving their assets. |
-| Corporate Pension De-Risking | Transferring defined benefit pension obligations from plan sponsors to American National through group annuity pension risk transfer products. |
-| Agricultural Business Protection | Insuring farm and ranch operations, equipment, crops, and livestock through specialized property and casualty products under the Farm Family brand. |
-| Life Insurance Protection | Providing income replacement and estate planning solutions for families and business owners through life insurance products. |
+**Agent readiness 0.0** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| Independent Agent Distribution Network | Products distributed through independent life and health agents, financial advisors, and broker-dealers across all 50 states. |
-| Pension Consultant Platforms | Integration with pension actuaries, consultants, and plan sponsors for group annuity and pension risk transfer transactions. |
+**Regulatory alignment 12.3** — Insurance
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/american-national-insurance/](https://apis.io/providers/american-national-insurance/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** info@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for American National Insurance: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/american-national-insurance/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
